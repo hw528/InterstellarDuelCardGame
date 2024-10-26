@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Rules - Interstellar Duel Card Game</title>
+  <style>
+    /* Basic page styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0b0c10;
+      color: #c5c6c7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      color: #66fcf1;
+      margin-top: 20px;
+    }
+
+    /* Rules content styling */
+    #rules-content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #1f2833;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    #rules-content p,
+    #rules-content h2,
+    #rules-content ul,
+    #rules-content ol {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+    }
+
+    /* Heading styling */
+    #rules-content h2 {
+      color: #66fcf1;
+      margin-top: 20px;
+    }
+
+    /* List styling */
+    #rules-content ul,
+    #rules-content ol {
+      list-style-position: inside;
+      padding-left: 0;
+      margin: 15px auto;
+    }
+
+    #rules-content li {
+      margin: 5px 0;
+      line-height: 1.5;
+    }
+
+    /* Back button styling */
+    #back-button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #45a29e;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #back-button:hover {
+      background-color: #66fcf1;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="rules-content">
+    <p>In Interstellar Duel, two players compete to win the most cards by choosing the strongest attributes.</p>
+    
+    <h2>Game Setup</h2>
+    <ul>
+      <li>Each player gets a deck of cards with celestial bodies.</li>
+      <li>Cards are face-down.</li>
+    </ul>
+    
+    <h2>Gameplay</h2>
+    <ol>
+      <li>Players draw a card each round.</li>
+      <li>The active player picks an attribute to compare.</li>
+      <li>Higher value for the chosen attribute wins the round.</li>
+      <li>If tied, cards are discarded.</li>
+      <li>Players alternate turns each round.</li>
+    </ol>
+    
+    <h2>Winning the Game</h2>
+    <p>The player with the most cards when one deck runs out wins.</p>
+    
+    <h2>Attributes</h2>
+    <ul>
+      <li><strong>Size</strong>: Higher is better.</li>
+      <li><strong>Mass</strong>: Higher is better.</li>
+      <li><strong>Temperature</strong>: Higher is better.</li>
+      <li><strong>Distance</strong>: Lower is better.</li>
+    </ul>
+    
+    <div id="back-button-container">
+      <a href="index.html" id="back-button">Back to Game</a>
+    </div>
+  </div>
+</body>
+</html>

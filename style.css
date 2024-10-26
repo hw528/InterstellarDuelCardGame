@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    background-color: #0b0c10;
+  }
+  /* 新增样式 */
+    .attributes {
+      padding: 10px;
+      text-align: left; /* 属性列表左对齐，便于阅读 */
+    }
+
+    .attributes ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .attributes li {
+      margin: 5px 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    #game-area {
+      display: flex;
+      justify-content: space-around; /* 调整为左右排列玩家区域 */
+      margin: 20px;
+    }
+    
+    .player-area {
+      width: 45%; /* 调整宽度以适应左右布局 */
+      text-align: center; /* 居中对齐玩家区域内的文本 */
+    }
+    
+    .card {
+      width: 200px;
+      /* 移除固定高度，让卡牌根据内容自适应高度 */
+      /* height: 300px; */
+      border: 2px solid #66fcf1;
+      margin: 10px auto;
+      background-color: #1f2833;
+      position: relative;
+      color: #c5c6c7;
+      padding-bottom: 10px; /* 底部留出空间，防止内容贴边 */
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card h3 {
+      margin-top: 10px;
+      text-align: center; /* 卡牌标题居中 */
+    }
+    
+    #controls {
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    #actions button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #45a29e;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    #actions button:hover {
+      background-color: #66fcf1;
+    }
+    
+    #result {
+      font-size: 1.2em;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Styles for the RULES button */
+    #rules-button-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #rules-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #45a29e;
+      border: none;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #rules-button:hover {
+      background-color: #66fcf1;
+    }
+    
+    /* Styles for the rules content */
+#rules-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: #c5c6c7;
+  }
+  
+  #rules-content h2 {
+    color: #66fcf1;
+  }
+  
+  #rules-content ul, #rules-content ol {
+    margin-left: 20px;
+  }
+  
+  #rules-content li {
+    margin: 5px 0;
+  }
+  
+  /* Styles for the Back to Game button */
+  #back-button-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  #back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #45a29e;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #back-button:hover {
+    background-color: #66fcf1;
+  }

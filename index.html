@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interstellar Duel Card Game</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace, sans-serif;
+      text-align: center;
+      color: #c5c6c7;
+      background-image: url('images/Image 10-26-24 at 1.38 PM.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    #actions button {
+      margin: 5px;
+      padding: 20px 40px;
+      font-size: 24px;
+      background-color: #45a29e;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    #turn-indicator {
+      font-size: larger;
+    }
+
+    .attributes {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .game-button {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: #45a29e;
+      color: #fff;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .game-button:hover {
+      background-color: #66fcf1;
+    }
+
+    .attributes ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .attributes li {
+      margin: 5px 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    #game-area {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .player-area {
+      width: 45%;
+      text-align: center;
+    }
+
+    .card {
+      width: 200px;
+      border: 2px solid #66fcf1;
+      margin: 10px auto;
+      background-color: #1f2833;
+      color: #c5c6c7;
+      padding-bottom: 10px;
+      border-radius: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+    }
+
+    #controls {
+      margin-top: 20px;
+    }
+
+    #actions button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #45a29e;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    #actions button:hover {
+      background-color: #66fcf1;
+    }
+
+    #result {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+
+    /* Rules button styling */
+    #rules-button-container {
+      margin: 50px 0px;
+    }
+
+    #rules-button {
+      padding: 10px 20px;
+      font-size: 20px;
+      background-color: #45a29e;
+      border: none;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    #rules-button:hover {
+      background-color: #66fcf1;
+    }
+
+    /* Rules content styling */
+    #rules-content {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #c5c6c7;
+      padding: 20px;
+      text-align: left;
+    }
+
+    #rules-content h2 {
+      color: #66fcf1;
+      margin-top: 20px;
+    }
+
+    #rules-content ul, #rules-content ol {
+      display: inline-block;
+      text-align: left;
+      margin-left: 0;
+    }
+
+    #rules-content li {
+      margin: 5px 0;
+    }
+
+    /* Back button styling */
+    #back-button-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #back-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #45a29e;
+      border: none;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #back-button:hover {
+      background-color: #66fcf1;
+    }
+
+    button, .game-button, #rules-button, #back-button {
+      font-family: 'Courier New', Courier, monospace, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interstellar Duel Card Game</h1>
+
+  <!-- RULES button -->
+  <div id="rules-button-container">
+    <a href="rules.html" id="rules-button" target="_blank">RULES</a>
+  </div>
+
+  <div id="game-area">
+    <div id="player1-area" class="player-area">
+      <h2>Player 1</h2>
+      <div id="player1-card" class="card">
+        <!-- Player 1 card info -->
+      </div>
+    </div>
+    <div id="player2-area" class="player-area">
+      <h2>Player 2</h2>
+      <div id="player2-card" class="card">
+        <!-- Player 2 card info -->
+      </div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <p id="turn-indicator">It's Player 1's turn to choose an attribute</p>
+    <div id="actions">
+      <!-- Attribute selection buttons -->
+    </div>
+    <div id="next-round">
+      <!-- Next round button -->
+    </div>
+  </div>
+
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
